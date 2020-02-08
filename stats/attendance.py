@@ -2,9 +2,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-import games from data
+from data import games
 
-attendance = data.games.loc[(data.games['type'] == 'info') & (data.games['multi2'] == 'attendance'), ['year', 'multi3']]
+attendance = games.loc[(games['type'] == 'info') & (games['multi2'] == 'attendance'), ['year', 'multi3']]
 
 # Change colmuns names
 attendance.columns = ['year', 'attendance']
