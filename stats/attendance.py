@@ -2,7 +2,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-import data
+import games from data
 
 attendance = data.games.loc[(data.games['type'] == 'info') & (data.games['multi2'] == 'attendance'), ['year', 'multi3']]
 
